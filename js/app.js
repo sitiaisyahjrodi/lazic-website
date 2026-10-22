@@ -1,56 +1,13 @@
 var IMG={"i1":"assets/images/dinara-bahan.webp","i2":"assets/images/fomom-bahan.webp","i3":"assets/images/fonose-bahan.webp","i4":"assets/images/legaplus-bahan.webp","i5":"assets/images/daun-latar.webp","i6":"assets/images/hero.webp","i8":"assets/images/dinara-podium.webp","i9":"assets/images/dinara-botol.webp","i10":"assets/images/dinara-buah.webp","i11":"assets/images/fomom-podium.webp","i12":"assets/images/fomom-pek.webp","i13":"assets/images/fomom-botol.webp","i14":"assets/images/fonose-podium.webp","i15":"assets/images/fonose-botol.webp","lp1":"assets/images/legaplus-podium.webp","lp2":"assets/images/legaplus-pek-putih.webp","i19":"assets/images/dinara-botol-putih.webp","i20":"assets/images/semua-produk.webp","mono":"assets/images/logo-lazic.webp","b1":"assets/images/lencana-1.webp","b2":"assets/images/lencana-2.webp","b3":"assets/images/lencana-3.webp","b4":"assets/images/lencana-4.webp","av":"assets/images/aisya-cs.webp"};
-var WA="60163030060",MAIL="lazicgroup.enquiry@gmail.com",ADDR="39, Jalan Eco 1, Hang Tuah Jaya, 75450 Ayer Keroh, Malacca"; /* ADDR: isi alamat pejabat */
 function wa(t){return"https://wa.me/"+WA+"?text="+encodeURIComponent(t)}
 var WH=["i9","i12","i13","i15","lp2","i19"];
 function im(k){return'<img class="'+(WH.indexOf(k)>-1?"wh":"")+'" src="'+IMG[k]+'" alt="" loading="lazy">'}
 function imw(k){return'<div class="pimg'+(WH.indexOf(k)>-1?" wh":"")+'"><img src="'+IMG[k]+'" alt="" loading="lazy"></div>'}
-var PAY="Bayar bila barang sampai (COD) atau online (FPX). Penghantaran 1–5 hari bekerja, biasanya 1–3 hari. Pesanan disahkan melalui WhatsApp.";
-var TR="Halal JAKIM, kilang bertaraf GMP Malaysia dan diuji di makmal (Lab Tested).";
-var FQ=[["Bagaimana cara membuat pesanan?","Pilih produk dan pakej, kemudian tekan Beli Sekarang. WhatsApp akan terbuka dengan mesej pesanan siap ditulis."],["Apakah kaedah pembayaran?","COD (bayar bila barang sampai), pembayaran online FPX, kad debit/kredit atau e-wallet. Pesanan disahkan melalui WhatsApp."],["Berapa lama penghantaran?","1–5 hari bekerja bergantung lokasi, biasanya 1–3 hari dah sampai."],["Adakah produk Lazic halal?","Ya, disahkan halal JAKIM, dihasilkan di kilang bertaraf GMP Malaysia dan diuji di makmal."],["Boleh ambil bersama ubat hospital?","Jarakkan 2 jam dengan pengambilan ubat atau produk lain. Sila rujuk doktor jika ragu-ragu."],["Boleh pulangkan atau batalkan pesanan?","Ada 7 Days Free Return dengan kos pemulangan ditanggung HQ. Pesanan juga boleh dibatalkan semasa penghantaran."]];
-var FB=["Membantu mencairkan lendir pekat|Lendir dalam sinus senang keluar dan tak tersumbat.","Membantu mengurangkan keradangan|Kecutkan bengkak pada dinding saluran pernafasan.","Mengurangkan simptom alahan|Bersin dan gatal lebih terkawal.","Membantu menguatkan sistem imun pernafasan|Bantu badan lebih bersedia hadapi habuk dan cuaca.","Pernafasan lebih lapang dan lancar|Bangun pagi, masuk aircond, tidur malam: lebih selesa."];
-var FH=[["Dos","1 biji sehari"],["Waktu","30 minit sebelum makan atau 2 jam selepas makan malam"],["Ubat lain","Jarakkan 2 jam dengan ubat atau produk lain"],["Umur","3 tahun ke atas (bawah 16 tahun: sekali sehari dengan pantauan)"]];
-var P={
-dinara:{n:"Dinara",s:"Temulawak Plus Liquid",t:"Jus herba temulawak untuk membantu mengekalkan paras kolesterol sihat.",img:"i8",g:["i8","i10","i9","i19"],im:["i10","i1","i19","i8"],
- sh:"Jus herba tradisional daripada temulawak, halia bara, kunyit, madu, delima, lemon dan bawang putih untuk membantu mengekalkan paras kolesterol sihat.",
- hl:[["leaf","Herba Semula Jadi"],["heart","Bantu Kolesterol Sihat"],["shield","Lulus KKM"],["bolt","1 Botol Cukup Sebulan"]],
- about:"Dinara ialah jus herba tradisional bahan semula jadi yang diformulasi untuk membantu mengekalkan paras kolesterol sihat dan menyokong kesejahteraan badan. Sebotol 500 ml cukup untuk kira-kira sebulan.",
- ck:["Lulus KKM, No. MAL2216185TC","Dijamin halal","100% herba semula jadi","7 Days Free Return"],
- ben:["Membantu paras kolesterol sihat|Sokong badan kekalkan kolesterol pada tahap normal.","Membantu melegakan kebas dan lenguh|Bantu rasa kebas dan tengkuk lenguh berkurang.","Membantu melegakan sakit sendi|Sokongan harian untuk pergerakan lebih selesa.","Menyokong peredaran darah|Halia dan bawang putih menyokong aliran darah.","Pernafasan dan dada lebih selesa|Bantu badan rasa lebih ringan dan lega."],
- hw:[["Dos","2 sudu sehari"],["Waktu","30 minit sebelum makan dan 2 jam selepas makan malam"],["Ubat lain","Jarakkan 2 jam dengan ubat atau produk lain"],["Umur","12 tahun dan ke atas"]],
- nt:"Tidak sesuai untuk ibu mengandung, bayi jaundice (jika menyusu ibu), pesakit hati dan buah pinggang rosak.",
- pk:[["1 botol (500 ml)",90,""],["2 botol (500 ml)",150,"Free Neck Massager"],["3 botol (500 ml)",220,"Free Neck Massager + Mini Dinara 250 ml"]],
- fq:[["Sebotol tahan berapa lama?","Sebotol 500 ml cukup untuk kegunaan kira-kira sebulan."],["Apa bahan dalam Dinara?","Temulawak, halia bara, kunyit, madu, delima, lemon dan bawang putih."],["Siapa yang tidak sesuai?","Ibu mengandung, bayi jaundice (jika menyusu ibu), pesakit hati dan buah pinggang rosak."],["Berapa hari baru nampak kesan?","Mengikut tahap kesihatan masing-masing. Yang paling cepat, seawal 7 hari."],["Bagaimana bayaran dan penghantaran?",PAY]]},
-fomom:{n:"Fomom",s:"Milk Booster",t:"Tablet kemam dengan ekstrak halba untuk menyokong penghasilan susu ibu.",img:"i11",g:["i11","i12","i13"],im:["i11","i2","i13","i12"],
- sh:"Chewable tablet milk booster dengan ekstrak halba asli untuk menyokong penghasilan susu ibu. Kemam sahaja macam gula-gula.",
- hl:[["heart","Sokong Susu Ibu"],["leaf","Ekstrak Halba"],["shield","Disahkan KKM"],["bolt","Kemam, Tak Perlu Telan"]],
- about:"Fomom Milk Booster ialah tablet kemam (30 g) dirumus dengan ekstrak halba asli, herba yang dikenali untuk menyokong penghasilan susu ibu. Sesuai untuk ibu yang menyusu dan mengepam.",
- ck:["Ekstrak halba asli","Disahkan KKM","Kemam sahaja, tak perlu telan","Jaminan wang dikembalikan"],
- ben:["Menyokong penghasilan susu|Bantu galakkan pengeluaran susu ibu.","Membantu menambah jumlah susu|Sokong hasil mengepam yang lebih baik.","Membantu meningkatkan kualiti susu|Sokong kesihatan ibu dan anak.","Memudahkan proses mengepam|Bantu susu lebih mudah keluar.","Melengkapkan keperluan nutrien|Sokongan magnesium dan vitamin untuk ibu dan anak."],
- hw:[["Dos","1 biji pagi dan 1 biji malam"],["Cara","Kemam macam gula-gula, tak perlu telan"],["Kesan","Perubahan dirasa seawal 14 hari"],["Umur","12 tahun ke atas"]],
- nt:"Tidak sesuai untuk ibu mengandung. Berhenti jika bayi kuning (jaundice) dan menyusu ibu. Rujuk doktor jika ada keadaan kesihatan tertentu.",
- pk:[["1 botol",75,""],["3 botol (beli 2 free 1)",150,"Pakej jimat, free 1 botol"]],
- fq:[["Apa bahan utama Fomom?","Ekstrak halba asli, herba tradisional yang dikenali untuk menyokong penghasilan susu ibu."],["Bagaimana cara ambil?","Kemam 1 biji waktu pagi dan 1 biji waktu malam."],["Siapa yang tidak sesuai?","Ibu mengandung, dan berhenti jika bayi kuning (jaundice) dan menyusu ibu."],["Berapa hari baru nampak kesan?","Perubahan boleh dirasa seawal 14 hari penggunaan, mengikut individu."],["Bagaimana bayaran dan penghantaran?",PAY+" Penghantaran percuma seluruh Malaysia."]]},
-fonose:{n:"Fonose",s:"Lega Resdung & Pernafasan Lancar",t:"Tablet kemam perisa oren, 1 biji sehari untuk pernafasan lega.",img:"i14",g:["i14","i15"],im:["i14","i3","i15","i4"],
- sh:"Tablet kemam perisa oren dengan Cendawan Susu Harimau, NAC dan PureWay-C untuk menyokong pernafasan lega dan mengurangkan gangguan resdung.",
- hl:[["leaf","Kemam Rasa Oren"],["shield","Disemak KKM"],["heart","1 Biji Sehari"],["bolt","Sesuai 3 Tahun Ke Atas"]],
- about:"Fonose ialah tablet kemam perisa oren, 30 tablet sebotol (cukup sebulan). Formulanya menggabungkan Cendawan Susu Harimau, NAC dan PureWay-C untuk membantu mencairkan lendir pekat, mengurangkan keradangan dan mengawal simptom alahan.",
- ck:["Disemak KKM, mematuhi Peraturan Makanan 1985","Halal JAKIM","Kilang GMP dan diuji makmal","Jaminan wang dikembalikan"],
- ben:FB,hw:FH,nt:"Fonose bukan ubat asma. Jika anda ada asma, teruskan rawatan dan inhaler seperti diarahkan doktor.",
- pk:[["1 botol (30 tablet)",90,""],["2 botol",150,"Free 1 Neck Massager"],["3 botol",220,"Free 1 Neck Massager"]],
- fq:[["Apa bahan dalam Fonose?","Serbuk oren, Cendawan Susu Harimau, NAC, Vitamin PureWay-C, magnesium, multivitamin dan multimineral, serta sucralose."],["Bagaimana cara makan?","1 biji sehari, 30 minit sebelum makan atau 2 jam selepas makan malam. Jarakkan 2 jam jika ambil ubat lain."],["Mula umur berapa boleh amalkan?","3 tahun dan ke atas. Bawah 16 tahun digalakkan sekali sehari sahaja dahulu."],["Berapa hari baru nampak kesan?","Mengikut tahap kesihatan masing-masing. Yang paling cepat, seawal 7 hari."],["Bagaimana bayaran dan penghantaran?",PAY+" Penghantaran percuma."]]},
-legaplus:{n:"Lega+",s:"Makanan Tambahan",t:"Makanan tambahan perisa peppermint untuk kesegaran nafas dan pernafasan selesa.",img:"lp1",g:["lp1","lp2"],im:["lp1","i4","lp2","i3"],
- sh:"Makanan tambahan perisa Persia peppermint untuk menyokong kesegaran nafas dan keselesaan pernafasan setiap hari.",
- hl:[["leaf","Perisa Peppermint"],["heart","30 Tablet"],["shield","Halal JAKIM"],["bolt","Nafas Lebih Segar"]],
- about:"Lega+ ialah makanan tambahan perisa Persia peppermint (30 tablet, 500 mg setiap tablet) untuk menyokong kesegaran nafas dan keselesaan pernafasan setiap hari.",
- ck:["Halal JAKIM","Kilang bertaraf GMP","Diuji di makmal","COD dan FPX tersedia"],
- ben:FB,hw:FH,nt:"Sila baca label produk. Jika ada ubat atau keadaan kesihatan tertentu, rujuk doktor atau ahli farmasi.",
- pk:[["1 pek",50,""],["2 pek",100,""],["3 pek",150,""],["4 pek + Free 1 pek",250,"Beli 4 free 1"]],
- fq:[["Bagaimana cara ambil Lega+?","1 biji sehari, 30 minit sebelum makan atau 2 jam selepas makan malam."],["Mula umur berapa boleh amalkan?","3 tahun dan ke atas. Bawah 16 tahun sekali sehari dengan pantauan."],["Boleh ambil bersama ubat lain?","Jarakkan 2 jam dengan ubat atau produk lain. Rujuk doktor jika ragu-ragu."],["Berapa banyak tablet dalam satu pek?","Setiap pek mengandungi 30 tablet, 500 mg setiap tablet."],["Bagaimana bayaran dan penghantaran?",PAY]]}};
 var K=Object.keys(P);
 function rm(v){return"RM"+v}
 function ic(n){return'<svg class="i"><use href="#'+n+'"/></svg>'}
 function from(p){return"Mula "+rm(p.pk[0][1])}
-function bind(){document.querySelectorAll("[data-i]").forEach(function(e){e.src=IMG[e.dataset.i]});document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa("Hi Lazic Group, saya berminat dengan produk anda.")});document.getElementById("hbg").style.backgroundImage="url("+IMG.i6+")";[".band",".fz"].forEach(function(s){document.querySelector(s).style.backgroundImage="url("+IMG.i5+")"});
+function bind(){document.querySelectorAll("[data-wa-text]").forEach(function(a){a.textContent="WhatsApp: "+WA_PAPAR});document.querySelectorAll("[data-i]").forEach(function(e){e.src=IMG[e.dataset.i]});document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa("Hi Lazic Group, saya berminat dengan produk anda.")});document.getElementById("hbg").style.backgroundImage="url("+IMG.i6+")";[".band",".fz"].forEach(function(s){document.querySelector(s).style.backgroundImage="url("+IMG.i5+")"});
  var ad=document.getElementById("addr");if(ADDR)ad.textContent=ADDR;else ad.remove()}
 document.getElementById("pg").innerHTML=K.map(function(k){var p=P[k];return'<article class="pc"><div class="im"><img src="'+IMG[p.img]+'" alt="'+p.n+'" loading="lazy"></div><h3>'+p.n+'</h3><div class="s">'+p.s+'</div><p class="t">'+p.t+'</p><div class="pr">'+from(p)+'</div><a class="btn dk sm" href="#/p/'+k+'">Lihat Produk '+ic("arr")+'</a></article>'}).join("");
 document.getElementById("fq").innerHTML=FQ.map(function(f){return"<details><summary>"+f[0]+"</summary><p>"+f[1]+"</p></details>"}).join("");
@@ -90,7 +47,7 @@ function card(p,l){var c=p.hw.filter(function(x){return x[0]==l})[0];return c?c[
 function ans(s){var m=s.toLowerCase(),fk=find(m),k=fk||(/\b(itu|tu|ni|nya|dia)\b/.test(m)?last:null),p=k&&P[k];if(fk)last=fk;var W=["Hubungi di WhatsApp",wa("Hi Lazic Group, saya ada soalan."),1];
  if(/^(hai|hi|hello|salam|assalam)/.test(m))return["Hai! Saya boleh bantu tentang Dinara, Fomom, Fonose dan Lega+. Apa yang anda nak tahu?"];
  if(/(terima kasih|thank|tq\b|tengkiu)/.test(m)||/^(ok|okay|okey|oke|baik|noted|alright)\b/.test(m))return["Okay, terima kasih kerana menggunakan saya. Jika ada pertanyaan, boleh terus WhatsApp kami. Selamat membeli!",[W]];
- if(/alamat|email|emel|hubungi|nombor|telefon|customer|cs\b/.test(m))return["WhatsApp: +60 16-303 0060\nEmel: "+MAIL+(ADDR?"\nAlamat: "+ADDR:""),[W,["Hantar emel","mailto:"+MAIL]]];
+ if(/alamat|email|emel|hubungi|nombor|telefon|customer|cs\b/.test(m))return["WhatsApp: "+WA_PAPAR+"\nEmel: "+MAIL+(ADDR?"\nAlamat: "+ADDR:""),[W,["Hantar emel","mailto:"+MAIL]]];
  if(/promo|diskaun|free|percuma|hadiah|offer|live/.test(m)){var g=(p?[k]:K).map(function(x){return P[x].pk.filter(function(y){return y[2]}).map(function(y){return"• "+P[x].n+" "+y[0]+": "+y[2]+" ("+rm(y[1])+")"}).join("\n")}).filter(Boolean).join("\n");return["Promo ikut pakej:\n"+g+"\nUntuk promo live terkini, sila tanya kami di WhatsApp.",[W]]}
  if(/pulang|refund|return|batal/.test(m))return[FQ[5][1],[W]];
  if(/order|beli|bayar|fpx|cod|hantar|pos\b|sampai|postage/.test(m)){var A=p?[["Order "+p.n,order(p,0),1]]:[["Lihat produk","#produk"]];return["Pilih pakej pada halaman produk, kemudian tekan Beli Sekarang. "+PAY,A]}
@@ -108,11 +65,21 @@ add("Hai! Saya Aisya, customer service Lazic. Awak boleh tanya tentang harga, pa
 document.getElementById("ch").innerHTML=["Harga Dinara","Ada promo tak?","Cara ambil Fonose","Cara order?"].map(function(t){return"<button>"+t+"</button>"}).join("");
 document.getElementById("ch").onclick=function(e){if(e.target.tagName=="BUTTON")send(e.target.textContent)};
 document.getElementById("f").onsubmit=function(e){e.preventDefault();var q=document.getElementById("q"),t=q.value.trim();if(t){send(t);q.value=""}};
-function tg(o){chat.classList.toggle("o",o);document.getElementById("fab").setAttribute("aria-expanded",chat.classList.contains("o"));if(chat.classList.contains("o"))document.getElementById("q").focus()}
-document.getElementById("fab").onclick=function(){tg()};document.getElementById("x").onclick=function(){tg(false)};
+document.getElementById("x").onclick=function(){tg(false)};
 document.querySelectorAll("[data-ask]").forEach(function(b){b.onclick=function(){tg(true)}});
 function fx(){[[".band .w>div:first-child","l"],[".band ul","r"],[".fz .w>div:first-child","l"],["#fq","r"],[".cta .w>div","l"],[".cta img","r"],[".tc","z"],[".pc","z"]].forEach(function(x){document.querySelectorAll(x[0]).forEach(function(e){e.classList.add(x[1])})});
  var nav=document.querySelector("nav"),hp=document.getElementById("hpar"),still=matchMedia("(prefers-reduced-motion: reduce)").matches;
  function sc(){var y=window.scrollY;nav.classList.toggle("sc",y>20);if(!still&&y<900)hp.style.transform="translate3d(0,"+(y*.22)+"px,0)"}
  addEventListener("scroll",sc,{passive:true});sc()}
+var fab=document.getElementById("fab");
+function setp(el,x,y){el.style.left=Math.min(Math.max(0,x),innerWidth-el.offsetWidth)+"px";el.style.top=Math.min(Math.max(0,y),innerHeight-el.offsetHeight)+"px";el.style.right="auto";el.style.bottom="auto"}
+function place(){if(!fab.dataset.mv||chat.dataset.mv)return;var f=fab.getBoundingClientRect(),w=chat.offsetWidth,h=chat.offsetHeight,y=f.top-h-12;if(y<8)y=f.bottom+12;setp(chat,f.right-w,y)}
+function tg(o){chat.classList.toggle("o",o);var op=chat.classList.contains("o");fab.setAttribute("aria-expanded",op);if(op){place();document.getElementById("q").focus()}}
+function drag(el,h){var s=null;
+ h.addEventListener("pointerdown",function(e){if(e.target.closest("#x")||(e.button&&e.button!==0))return;var r=el.getBoundingClientRect();s={x:e.clientX,y:e.clientY,l:r.left,t:r.top,m:false};el._dm=0;try{h.setPointerCapture(e.pointerId)}catch(_){}});
+ h.addEventListener("pointermove",function(e){if(!s)return;var dx=e.clientX-s.x,dy=e.clientY-s.y;if(!s.m&&Math.abs(dx)+Math.abs(dy)<6)return;s.m=true;el._dm=1;el.dataset.mv=1;setp(el,s.l+dx,s.t+dy)});
+ h.addEventListener("pointerup",function(){s=null});h.addEventListener("pointercancel",function(){s=null})}
+drag(fab,fab);drag(chat,chat.querySelector("header"));
+fab.onclick=function(){if(fab._dm){fab._dm=0;return}tg()};
+addEventListener("resize",function(){[fab,chat].forEach(function(el){if(el.style.left){var r=el.getBoundingClientRect();setp(el,r.left,r.top)}})});
 bind();route();rv();fx();

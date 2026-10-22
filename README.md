@@ -6,7 +6,9 @@ Website statik (HTML + CSS + JS biasa). Tak perlu install apa-apa untuk jalankan
 ```
 index.html          halaman utama + halaman produk (guna #/p/dinara dsb)
 css/style.css       semua rekaan dan animasi
-js/app.js           data produk, harga, pakej, chatbot Aisya
+js/config.js        nombor WhatsApp, emel, alamat (edit di sini)
+js/data.js          produk, harga, pakej, promo, soalan lazim (edit di sini)
+js/app.js           logik website + chatbot Aisya (biasanya tak perlu disentuh)
 assets/images/      semua gambar
 ```
 
@@ -17,12 +19,9 @@ assets/images/      semua gambar
 
 Alternatif: dwiklik `index.html` terus, atau `npx serve` dalam terminal.
 
-## Apa yang awak perlu edit (semua dalam js/app.js, bahagian atas)
-- `WA` : nombor WhatsApp (format 60xxxxxxxxx)
-- `MAIL` : emel
-- `ADDR` : alamat pejabat (kosong = tak dipaparkan)
-- `P` : data produk (harga `pk`, manfaat `ben`, cara ambil `hw`, soalan lazim `fq`)
-- `FQ` : soalan lazim umum di homepage
+## Apa yang awak perlu edit
+- `js/config.js` : `WA` (nombor order), `WA_PAPAR`, `MAIL`, `ADDR`
+- `js/data.js`   : harga, pakej, manfaat, cara ambil, soalan lazim
 
 Tukar harga di satu tempat sahaja; kad produk, butang WhatsApp dan chatbot semua ikut data yang sama.
 
@@ -42,3 +41,14 @@ git push -u origin main
 ```
 Kemudian di Netlify: Add new site > Import an existing project > pilih repo.
 Build command: **kosongkan**. Publish directory: **.** (titik).
+
+## Selepas update
+```
+git add .
+git commit -m "kemas kini"
+git push
+```
+Netlify akan deploy semula sendiri.
+
+## Buang badge "Powered by Netlify"
+Netlify: Project configuration > General > Powered by Netlify badge > matikan.
